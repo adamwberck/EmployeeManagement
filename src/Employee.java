@@ -9,6 +9,10 @@ public class Employee {
         this.department = department;
     }
 
+    public static String outMemberVars() {
+        return "firstname,lastname,department\n";
+    }
+
     @Override
     public String toString(){
         return firstName + "," + lastName + "," + department.getName() + "\n";

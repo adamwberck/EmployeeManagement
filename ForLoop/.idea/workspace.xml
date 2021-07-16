@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29948990-cee1-4bd0-9346-ccc929ec96e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employees.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/DepartmentList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../employees.cvs" beforeDir="false" afterPath="$PROJECT_DIR$/../employees.cvs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/DepartmentList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/DepartmentList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../src/ManageSystemRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ManageSystemRunner.java" afterDir="false" />
     </list>
