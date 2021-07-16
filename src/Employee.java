@@ -11,6 +11,18 @@ public class Employee {
 
     @Override
     public String toString(){
-        return lastName + ", " + firstName + " - " + department.getName();
+        return firstName + "," + lastName + "," + department.getName() + "\n";
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public Department getDepartment() {
+        return department;
     }
 }
