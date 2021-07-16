@@ -5,12 +5,12 @@ public class ManageSystemRunner {
         var departmentList = new DepartmentList();
         //initial read of txt
         readFromTxt(departmentList);
-        //output to CVS
-        outputToCVS(departmentList);
+        //output to csv
+        outputToCSV(departmentList);
         //clear from memory
         departmentList.clear();
         //read again
-        readFromCVS(departmentList);
+        readFromCSV(departmentList);
 
         //add employee
         departmentList.addEmployee("John", "Smith", "Tech");
@@ -28,23 +28,23 @@ public class ManageSystemRunner {
     }
 
     //use generic read but comma separator
-    private static void readFromCVS(DepartmentList departmentList) {
-        File employeeTxt =  new File("employees.cvs");
+    private static void readFromCSV(DepartmentList departmentList) {
+        File employeeTxt =  new File("employees.csv");
         genericReadFrom(employeeTxt, departmentList, ",");
     }
 
-    //write to cvs using toString and FileWriter
-    private static void outputToCVS(DepartmentList departmentList) {
+    //write to csv using toString and FileWriter
+    private static void outputToCSV(DepartmentList departmentList) {
         try {
-            var cvsWriter = new FileWriter("employees.cvs");
-            cvsWriter.append(Employee.outMemberVars());//write the vars
+            var csvWriter = new FileWriter("employees.csv");
+           csvWriter.append(Employee.outMemberVars());//write the vars
             for (Department department : departmentList ){
                 for (Employee employee : department.getEmployeeList()){
-                    cvsWriter.append(employee.toString());
+                   csvWriter.append(employee.toString());
                 }
             }
-            cvsWriter.flush();
-            cvsWriter.close();
+           csvWriter.flush();
+           csvWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
